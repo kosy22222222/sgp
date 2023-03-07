@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity { //class 자식 extends 부모
 
-    @Override
+    @Override //부모와는 다른 개성(?) 부여
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState); //얘에 있는 온크리에이트도 쓰고 부모의 온크리에이트도 쓰겠다?
-        setContentView(R.layout.activity_main); //xml내용대로 실행되게 함
+        super.onCreate(savedInstanceState); //수퍼로 부모 클래스의 메소드 사용
+        setContentView(R.layout.activity_main); //xml 내용대로 실행
     }
 }
