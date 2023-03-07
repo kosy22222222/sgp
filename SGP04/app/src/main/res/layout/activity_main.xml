@@ -11,17 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
-        android:rotation="180"
         android:text="2021180002 고서연"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#3F51B5"
-        android:textSize="24sp"
+        android:textSize="50sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-<!--    텍스트에 SP를 쓰면 화면 비율에 따라 텍스트 뷰 크기가 조정됨. 베스트는 숫자를 쓰지 않고 이미지 등의 크기에 맞추는 것-->
+    <!--돌리고 돌리고 android:rotation="180"-->
+    <!--텍스트에 SP를 쓰면 화면 비율에 따라 텍스트 뷰 크기가 조정됨. 베스트는 숫자를 쓰지 않고 이미지 등의 크기에 맞추는 것--ㅋ>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
