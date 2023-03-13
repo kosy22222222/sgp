@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 먼저 기본꼴을 생각해 보자!
+/Linear(Vertical)    위, 아래로 구분(버튼/이미지)
+    /linear(Horizontal)    화살표 버튼이 양 옆에 있으므로 수평
+        /Button (w=)
+        /TextView (fill)
+        /Button (w=)
+    /ImageView (fill) -->
+
+<!--다양한 해상도(기기)에 대응 가능한 좋은 레이아웃. relative 도 비슷-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World!" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello World!" />
+
+</LinearLayout>
