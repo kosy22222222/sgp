@@ -7,7 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <!--아랫줄의 @+id 하면 알아서 값 할당해줄고임-->
     <TextView
+        android:id="@+id/snumTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
@@ -21,7 +24,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Btn1"
+        android:onClick="onBtnBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn1"
+        app:layout_constraintBottom_toTopOf="@+id/snumTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Btn2"
+        android:onClick="onBtnBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn2"
+        app:layout_constraintBottom_toTopOf="@+id/Btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <!--돌리고 돌리고 android:rotation="180"-->
-    <!--텍스트에 SP를 쓰면 화면 비율에 따라 텍스트 뷰 크기가 조정됨. 베스트는 숫자를 쓰지 않고 이미지 등의 크기에 맞추는 것--ㅋ>
+    <!--텍스트에 SP를 쓰면 화면 비율에 따라 텍스트 뷰 크기가 조정됨. 베스트는 숫자를 쓰지 않고 이미지 등의 크기에 맞추는 것-->
+    <!--앞으로 더욱 많은 이벤트를 다루게 돼도, 뭐가 됐건 연결만 잘 해주면 장땡-->
+    <!--함수 이름을 xml에 박아 둘 수 있다.-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
