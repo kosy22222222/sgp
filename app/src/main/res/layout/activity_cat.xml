@@ -9,7 +9,43 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_cat">
-    </ImageView>
+        android:background="@drawable/bg_cat"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/cat1"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat2"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat3"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat4"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat5"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat6"
+            style="@style/cat"/>
+        <ImageView
+            android:id="@+id/cat7"
+            style="@style/cat"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cat_layer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/scoreTextView"
+        android:text="score:"/>
+
 
 </FrameLayout>
