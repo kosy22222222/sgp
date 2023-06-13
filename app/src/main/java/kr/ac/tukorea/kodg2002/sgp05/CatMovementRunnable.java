@@ -15,7 +15,7 @@ public class CatMovementRunnable implements Runnable {
 
     @Override
     public void run() {
-        // 아래로 이동
+        // Move down
         while (catImageView.getY() < targetY) {
             try {
                 Thread.sleep(1);
@@ -25,14 +25,14 @@ public class CatMovementRunnable implements Runnable {
             }
         }
 
-        // 1초 지연
+        // Delay for 1 second
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        // 원래 좌표로 천천히 이동
+        // Move back up to the original position
         while (catImageView.getY() > originalY) {
             try {
                 Thread.sleep(1);

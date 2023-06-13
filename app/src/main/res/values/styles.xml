@@ -11,5 +11,24 @@
         <item name="android:layout_weight">1</item>
         <item name="android:src">@drawable/catt</item>
     </style>
-
+    <style name="catt">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/redcat</item>
+    </style>
+    <style name="big">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/big</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="bigg">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/bigg</item>
+        <item name="android:visibility">invisible</item>
+    </style>
 </resources>

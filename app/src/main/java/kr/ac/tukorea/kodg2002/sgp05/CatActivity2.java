@@ -16,14 +16,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import kr.ac.tukorea.kodg2002.sgp05.databinding.ActivityCatBinding;
+import kr.ac.tukorea.kodg2002.sgp05.databinding.ActivityCat2Binding;
 
-public class CatActivity extends AppCompatActivity {
-    private ActivityCatBinding binding;
+public class CatActivity2 extends AppCompatActivity {
+    private ActivityCat2Binding binding;
     private List<ImageView> catImageViews;
     private List<ImageView> bigImageViews;
     private static final int ANIMATION_DELAY = 5000;
-    private static final int SCORE_INCREMENT = 1;
+    private static final int SCORE_INCREMENT = 5;
+    private static final int SCORE_DECREMENT = 10;
     private static final int ACTIVITY_FINISH_DELAY = 21000; // 20 seconds
     private Random random;
     private int score;
@@ -38,9 +39,7 @@ public class CatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d("d", "cat");
-
-        binding = ActivityCatBinding.inflate(getLayoutInflater());
+        binding = ActivityCat2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         catImageViews = new ArrayList<>();
@@ -51,6 +50,13 @@ public class CatActivity extends AppCompatActivity {
         catImageViews.add(binding.cat5);
         catImageViews.add(binding.cat6);
         catImageViews.add(binding.cat7);
+        catImageViews.add(binding.catt1);
+        catImageViews.add(binding.catt2);
+        catImageViews.add(binding.catt3);
+        catImageViews.add(binding.catt4);
+        catImageViews.add(binding.catt5);
+        catImageViews.add(binding.catt6);
+        catImageViews.add(binding.catt7);
 
         bigImageViews = new ArrayList<>();
         bigImageViews.add(binding.big1);
@@ -60,6 +66,13 @@ public class CatActivity extends AppCompatActivity {
         bigImageViews.add(binding.big5);
         bigImageViews.add(binding.big6);
         bigImageViews.add(binding.big7);
+        bigImageViews.add(binding.bigg1);
+        bigImageViews.add(binding.bigg2);
+        bigImageViews.add(binding.bigg3);
+        bigImageViews.add(binding.bigg4);
+        bigImageViews.add(binding.bigg5);
+        bigImageViews.add(binding.bigg6);
+        bigImageViews.add(binding.bigg7);
 
         random = new Random();
         score = 0;
@@ -116,6 +129,10 @@ public class CatActivity extends AppCompatActivity {
         score += SCORE_INCREMENT;
         scoreTextView.setText("Score: " + score);
     }
+    private void decrementScore() {
+        score -= SCORE_DECREMENT;
+        scoreTextView.setText("Score: " + score);
+    }
 
     private void startCatAnimation() {
         for (ImageView catImageView : catImageViews) {
@@ -141,7 +158,7 @@ public class CatActivity extends AppCompatActivity {
                     public void run() {
                         catImageView.animate()
                                 .translationY(0)
-                                .setDuration(duration)
+                                .setDuration(random.nextInt(duration))
                                 .withEndAction(new Runnable() {
                                     @Override
                                     public void run() {
@@ -166,7 +183,8 @@ public class CatActivity extends AppCompatActivity {
                     isTouched = true; // 터치 이벤트 처리 플래그 설정
 
                     int catIndex = catImageViews.indexOf(catImageView);
-                    incrementScore();
+                    if(catIndex <= 7) incrementScore();
+                    else decrementScore();
                     Log.d("CatActivity", "Cat " + (catIndex + 1) + " clicked.");
 
                     ImageView bigImageView = bigImageViews.get(catIndex);

@@ -11,6 +11,24 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg_start" />
 
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="190dp"
+        android:src="@drawable/fire"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/fire1"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="190dp"
+        android:src="@drawable/fire2"
+        android:id="@+id/fire2"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
     <ImageButton
         android:id="@+id/btnStart"
         android:layout_width="140dp"
@@ -19,5 +37,12 @@
         android:layout_marginTop="120dp"
         android:layout_height="50dp"
         android:onClick="onBtnStart"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Recent Score:"
+        android:id="@+id/score"/>
 
 </FrameLayout>

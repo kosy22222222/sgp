@@ -36,6 +36,32 @@
             android:id="@+id/cat7"
             style="@style/cat"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/catt1"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt2"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt3"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt4"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt5"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt6"
+            style="@style/catt"/>
+        <ImageView
+            android:id="@+id/catt7"
+            style="@style/catt"/>
+    </LinearLayout>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -65,6 +91,33 @@
         <ImageView
             android:id="@+id/big7"
             style="@style/big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bigg1"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg2"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg3"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg4"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg5"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg6"
+            style="@style/bigg" />
+        <ImageView
+            android:id="@+id/bigg7"
+            style="@style/bigg" />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
